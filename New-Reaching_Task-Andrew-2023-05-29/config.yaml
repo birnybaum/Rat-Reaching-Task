@@ -1,0 +1,92 @@
+    # Project definitions (do not edit)
+Task: New-Reaching_Task
+scorer: Andrew
+date: May29
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: C:\Users\Andrew\Documents\Reaching-Task\\New-Reaching_Task-Andrew-2023-05-29
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  C:\Users\Andrew\Documents\Parra_Lab\New-Reaching_Task-Andrew-2023-05-29\videos\S1.avi:
+    crop: 819, 1290, 510, 1084
+  C:\Users\Andrew\Documents\Parra_Lab\New-Reaching_Task-Andrew-2023-05-29\videos\S10.avi:
+    crop: 819, 1290, 510, 1084
+  C:\Users\Andrew\Documents\Parra_Lab\New-Reaching_Task-Andrew-2023-05-29\videos\S2.avi:
+    crop: 819, 1290, 510, 1084
+  C:\Users\Andrew\Documents\Parra_Lab\New-Reaching_Task-Andrew-2023-05-29\videos\S3.avi:
+    crop: 819, 1290, 510, 1084
+  C:\Users\Andrew\Documents\Parra_Lab\New-Reaching_Task-Andrew-2023-05-29\videos\S4.avi:
+    crop: 819, 1290, 510, 1084
+  C:\Users\Andrew\Documents\Parra_Lab\New-Reaching_Task-Andrew-2023-05-29\videos\S5.avi:
+    crop: 819, 1290, 510, 1084
+  C:\Users\Andrew\Documents\Parra_Lab\New-Reaching_Task-Andrew-2023-05-29\videos\S6.avi:
+    crop: 819, 1290, 510, 1084
+  C:\Users\Andrew\Documents\Parra_Lab\New-Reaching_Task-Andrew-2023-05-29\videos\S7.avi:
+    crop: 819, 1290, 510, 1084
+  C:\Users\Andrew\Documents\Parra_Lab\New-Reaching_Task-Andrew-2023-05-29\videos\S8.avi:
+    crop: 819, 1290, 510, 1084
+  C:\Users\Andrew\Documents\Parra_Lab\New-Reaching_Task-Andrew-2023-05-29\videos\S9.avi:
+    crop: 819, 1290, 510, 1084
+
+bodyparts:
+- Wrist
+- Thumb
+- Index
+- Middle
+- Last
+#- Pellet
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton:
+- - Wrist
+  - Thumb
+- - Wrist
+  - Index
+- - Wrist
+  - Middle
+- - Wrist
+  - Last
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.5
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: true
+    #if cropping is true for analysis, then set the values here:
+x1: 819
+x2: 1290
+y1: 510
+y2: 1084
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+engine: tensorflow
+detector_snapshotindex:
+SuperAnimalConversionTables:

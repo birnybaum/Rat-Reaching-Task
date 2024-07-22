@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\Andrew\\Documents\\Parra_Lab\\New-Reaching_Task-Andrew-2023-05-29\\dlc-models\\iteration-0\\New-Reaching_TaskMay29-trainset95shuffle1\\train\\snapshot-1030000"
+all_model_checkpoint_paths: "C:\\Users\\Andrew\\Documents\\Parra_Lab\\New-Reaching_Task-Andrew-2023-05-29\\dlc-models\\iteration-0\\New-Reaching_TaskMay29-trainset95shuffle1\\train\\snapshot-1030000"
