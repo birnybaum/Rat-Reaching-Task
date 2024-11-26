@@ -189,7 +189,7 @@ def rat_corr(User_Dir,rat_name):
             for j in range(len(avg_corr[i])):
                 index, _ = signal.find_peaks(avg_corr[i][j], height=0.15)
                 if index.size != 0:
-                    last_idx = index[0] #first is 0
+                    last_idx = index[-1] 
                     sub_idx.append(last_idx)
                     sub_peak.append(avg_corr[i][j][last_idx])
                 else:
